@@ -131,8 +131,9 @@ class BasicToolbar(CMSToolbar):
         admin_menu.add_break(ADMINISTRATION_BREAK)
 
         # cms users
-        admin_menu.add_sideframe_item(_('User settings'), url=admin_reverse('cms_usersettings_change'))
-        admin_menu.add_break(USER_SETTINGS_BREAK)
+        # REMOVED DUE TO UNKNOWN BUG
+        #admin_menu.add_sideframe_item(_('User settings'), url=admin_reverse('cms_usersettings_change'))
+        #admin_menu.add_break(USER_SETTINGS_BREAK)
 
         # logout
         self.add_logout_button(admin_menu)
